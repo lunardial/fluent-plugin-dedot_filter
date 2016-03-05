@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fluent/plugin/dedot_filter/version'
+require 'fluent/plugin/filter_dedot/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-dedot_filter"
@@ -9,15 +9,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tomoyuki Sugimura"]
   spec.email         = ["tomoyuki.sugimura@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = %q{de-dot field name for elasticsearch 2.x}
+  spec.description   = %q{de-dot field name for elasticsearch 2.x}
   spec.homepage      = "https://github.com/lunardial/fluent-plugin-dedot_filter"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    #spac.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
