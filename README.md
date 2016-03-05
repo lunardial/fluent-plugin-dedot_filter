@@ -1,28 +1,28 @@
-# Fluent::Plugin::DedotFilter
+# fluent-plugin-dedot_filter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fluent/plugin/dedot_filter`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Fluentd Filter plugin to de-dot field name for elasticsearch 2.x.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'fluent-plugin-dedot_filter'
+```bash
+# for fluentd
+gem install fluent-plugin-dedot_filter
+
+# for td-agent2
+# td-agent-gem install fluent-plugin-dedot_filter
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install fluent-plugin-dedot_filter
 
 ## Usage
 
-TODO: Write usage instructions here
+```xml
+<filter access.apache>
+  @type             dedot
+  de_dot            true
+  de_dot_separator  _
+</filter>
+```
 
 ## Development
 
@@ -32,7 +32,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/fluent-plugin-dedot_filter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/lunardial/fluent-plugin-dedot_filter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
