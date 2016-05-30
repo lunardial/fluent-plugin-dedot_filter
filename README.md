@@ -21,6 +21,7 @@ td-agent-gem install fluent-plugin-dedot_filter
   @type             dedot
   de_dot            true
   de_dot_separator  _
+  de_dot_nested     false
 </filter>
 ```
 
@@ -28,8 +29,10 @@ td-agent-gem install fluent-plugin-dedot_filter
 
 * `de_dot` (default: true)
 * `de_dot_separator` (default: '_')
+* `de_dot_nested` (default: false)
 
 `de_dot_separator` cannot be or contain '.'.
+`de_dot_nested` will cause the plugin to recurse through nested structures (hashes and arrays), and remove dots in those key-names too.
 
 ## License
 
