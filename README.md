@@ -21,6 +21,7 @@ td-agent-gem install fluent-plugin-dedot_filter
   @type             dedot
   de_dot            true
   de_dot_separator  _
+  de_dot_nested     false
 </filter>
 ```
 
