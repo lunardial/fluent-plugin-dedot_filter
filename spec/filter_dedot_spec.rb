@@ -3,18 +3,18 @@
 require 'helper'
 
 class TestDedotFilter
-  RSpec.describe Fluent::DedotFilter do
+  RSpec.describe Fluent::Plugin::DedotFilter do
 
     CONFIG = %[]
 
-    def create_driver(conf=CONFIG, tag='test')
-      Fluent::Test::FilterTestDriver.new(Fluent::DedotFilter, tag)
+    def create_driver(conf=CONFIG)
+      Fluent::Test::Driver::Filter.new(Fluent::Plugin::DedotFilter)
     end
 
     def create_filter
-      Fluent::DedotFilter.new
+      Fluent::Plugin::DedotFilter.new
     end
-    
+
     before :all do
       Fluent::Test.setup
     end
@@ -133,7 +133,7 @@ class TestDedotFilter
       end
 
     end
-    
+
   end
 
 end

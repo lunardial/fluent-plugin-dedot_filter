@@ -1,5 +1,7 @@
-module Fluent
-  class DedotFilter < Fluent::Filter
+require 'fluent/plugin/filter'
+
+module Fluent::Plugin
+  class DedotFilter < Filter
 
     Fluent::Plugin.register_filter('dedot', self)
 
