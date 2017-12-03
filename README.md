@@ -1,16 +1,29 @@
 # fluent-plugin-dedot_filter
 
-Fluentd Filter plugin to de-dot field name for elasticsearch 2.x.
+Fluentd Filter plugin to de-dot field name for elasticsearch.
+
+## Requirements
+
+| fluent-plugin-dedot_filter  | fluentd |
+|-----------------------------|---------|
+| >= 1.0.0 | >= v0.14.0 |
+|  < 1.0.0 | >= v0.12.0 |
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```bash
-# for fluentd
+# for fluentd v0.12
+gem install fluent-plugin-dedot_filter -v "< 1.0.0"
+
+# for fluentd v0.14 or higher
 gem install fluent-plugin-dedot_filter
 
 # for td-agent2
+td-agent-gem install fluent-plugin-dedot_filter -v "< 1.0.0"
+
+# for td-agent3
 td-agent-gem install fluent-plugin-dedot_filter
 ```
 
