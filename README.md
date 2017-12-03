@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/fluent-plugin-dedot_filter.svg)](https://badge.fury.io/rb/fluent-plugin-dedot_filter)
 [![Build Status](https://travis-ci.org/lunardial/fluent-plugin-dedot_filter.svg?branch=master)](https://travis-ci.org/lunardial/fluent-plugin-dedot_filter)
 [![Code Climate](https://codeclimate.com/github/lunardial/fluent-plugin-dedot_filter/badges/gpa.svg)](https://codeclimate.com/github/lunardial/fluent-plugin-dedot_filter)
-[![Coverage Status](https://coveralls.io/repos/github/lunardial/fluent-plugin-dedot_filter/badge.svg?branch=master)](https://coveralls.io/github/lunardial/fluent-plugin-dedot_filter?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/lunardial/fluent-plugin-dedot_filter/badge.svg)](https://coveralls.io/github/lunardial/fluent-plugin-dedot_filter)
 [![downloads](https://img.shields.io/gem/dt/fluent-plugin-dedot_filter.svg)](https://rubygems.org/gems/fluent-plugin-dedot_filter)
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
