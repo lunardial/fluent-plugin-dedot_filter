@@ -1,6 +1,8 @@
 language: ruby
 rvm:
   - 2.4
+branches:
+  except: /^(feature|try).*$/
 script: bundle exec rspec
 gemfile:
   - Gemfile
