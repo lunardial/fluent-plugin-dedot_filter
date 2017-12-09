@@ -22,10 +22,10 @@ Add this line to your application's Gemfile:
 
 ```bash
 # for fluentd v0.12
-gem install fluent-plugin-dedot_filter -v "< 1.0.0"
+fluent-gem install fluent-plugin-dedot_filter -v "< 1.0.0"
 
 # for fluentd v0.14 or higher
-gem install fluent-plugin-dedot_filter
+fluent-gem install fluent-plugin-dedot_filter
 
 # for td-agent2
 td-agent-gem install fluent-plugin-dedot_filter -v "< 1.0.0"
